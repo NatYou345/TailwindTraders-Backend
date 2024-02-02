@@ -29,7 +29,7 @@
     <MicrosoftVisualStudioAzureContainersToolsTargets>1.1.1</MicrosoftVisualStudioAzureContainersToolsTargets>
     <MicrosoftAspNetWebApiClient>5.2.7</MicrosoftAspNetWebApiClient>
     <MicrosoftApplicationInsightsAspNetCore>2.7.1</MicrosoftApplicationInsightsAspNetCore>
-    <MicrosoftAspNetCoreAuthenticationJwtBearer>5.0.0</MicrosoftAspNetCoreAuthenticationJwtBearer>
+    <MicrosoftAspNetCoreAuthenticationJwtBearer>5.0.17</MicrosoftAspNetCoreAuthenticationJwtBearer>
     <MicrosoftML>1.1.0</MicrosoftML>
     <MicrosoftMLImageAnalytics>1.1.0</MicrosoftMLImageAnalytics>
     <MicrosoftMLTensorFlow>0.12.0</MicrosoftMLTensorFlow>
