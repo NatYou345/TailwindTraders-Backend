@@ -36,6 +36,6 @@
     <SwashbuckleAspNetCore>5.0.0-rc2</SwashbuckleAspNetCore>
     <AspNetCore_HealthChecks_SqlServer>2.2.0</AspNetCore_HealthChecks_SqlServer>
     <AspNetCore_HealthChecks_Uris>2.2.2</AspNetCore_HealthChecks_Uris>
-    <MicrosoftAspNetCoreMvcNewtonsoftJson>5.0.0</MicrosoftAspNetCoreMvcNewtonsoftJson>
+    <MicrosoftAspNetCoreMvcNewtonsoftJson>5.0.17</MicrosoftAspNetCoreMvcNewtonsoftJson>
   </PropertyGroup>
 </Project>
