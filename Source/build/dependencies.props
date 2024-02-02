@@ -23,14 +23,14 @@
     <MicrosoftApplicationInsightsAspNetCore>2.5.1</MicrosoftApplicationInsightsAspNetCore>
     <MicrosoftAspNetCoreMvcVersioning>5.0.0-preview.2</MicrosoftAspNetCoreMvcVersioning>
     <MicrosoftAspNetCoreMvcVersioningApiExplorer>5.0.0-preview.2</MicrosoftAspNetCoreMvcVersioningApiExplorer>
-    <MicrosoftML>1.1.0</MicrosoftML>
+    <MicrosoftML>3.0.1</MicrosoftML>
     <MicrosoftMLImageAnalytics>1.1.0</MicrosoftMLImageAnalytics>
     <MicrosoftMLTensorFlow>0.12.0</MicrosoftMLTensorFlow>
     <MicrosoftVisualStudioAzureContainersToolsTargets>1.1.1</MicrosoftVisualStudioAzureContainersToolsTargets>
     <MicrosoftAspNetWebApiClient>5.2.7</MicrosoftAspNetWebApiClient>
     <MicrosoftApplicationInsightsAspNetCore>2.7.1</MicrosoftApplicationInsightsAspNetCore>
     <MicrosoftAspNetCoreAuthenticationJwtBearer>5.0.0</MicrosoftAspNetCoreAuthenticationJwtBearer>
-    <MicrosoftML>1.1.0</MicrosoftML>
+    <MicrosoftML>3.0.1</MicrosoftML>
     <MicrosoftMLImageAnalytics>1.1.0</MicrosoftMLImageAnalytics>
     <MicrosoftMLTensorFlow>0.12.0</MicrosoftMLTensorFlow>
     <SwashbuckleAspNetCore>5.0.0-rc2</SwashbuckleAspNetCore>
