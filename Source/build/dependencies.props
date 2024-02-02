@@ -10,7 +10,7 @@
 
   <PropertyGroup Label="Netcore Versions">
     <MicrosoftAspNetCoreRazorDesign>2.2.0</MicrosoftAspNetCoreRazorDesign>
-    <MicrosoftAspNetCoreHttpFeatures>5.0.0</MicrosoftAspNetCoreHttpFeatures>
+    <MicrosoftAspNetCoreHttpFeatures>5.0.17</MicrosoftAspNetCoreHttpFeatures>
     <MicrosoftEntityFrameworkCore>5.0.0</MicrosoftEntityFrameworkCore>
     <MicrosoftEntityFrameworkCoreDesign>5.0.0</MicrosoftEntityFrameworkCoreDesign>
 	  <MicrosoftEntityFrameworkCoreCosmos>5.0.0</MicrosoftEntityFrameworkCoreCosmos>
