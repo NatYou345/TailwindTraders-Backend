@@ -15,7 +15,7 @@
     <MicrosoftEntityFrameworkCoreDesign>5.0.0</MicrosoftEntityFrameworkCoreDesign>
 	  <MicrosoftEntityFrameworkCoreCosmos>5.0.0</MicrosoftEntityFrameworkCoreCosmos>
     <MicrosoftEntityFrameworkCoreSqlServer>5.0.0</MicrosoftEntityFrameworkCoreSqlServer>
-    <MicrosoftVisualStudioWebCodeGenerationDesign>5.0.0</MicrosoftVisualStudioWebCodeGenerationDesign>
+    <MicrosoftVisualStudioWebCodeGenerationDesign>5.0.2</MicrosoftVisualStudioWebCodeGenerationDesign>
   </PropertyGroup>
 
   <PropertyGroup Label="External Package Versions">
