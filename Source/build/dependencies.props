@@ -19,7 +19,7 @@
   </PropertyGroup>
 
   <PropertyGroup Label="External Package Versions">
-    <CsvHelper>7.1.1</CsvHelper> 
+    <CsvHelper>30.1.0</CsvHelper> 
     <MicrosoftApplicationInsightsAspNetCore>2.5.1</MicrosoftApplicationInsightsAspNetCore>
     <MicrosoftAspNetCoreMvcVersioning>5.0.0-preview.2</MicrosoftAspNetCoreMvcVersioning>
     <MicrosoftAspNetCoreMvcVersioningApiExplorer>5.0.0-preview.2</MicrosoftAspNetCoreMvcVersioningApiExplorer>
