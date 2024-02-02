@@ -18,7 +18,7 @@
     "http-errors": "~1.6.2",
     "jsonwebtoken": "^9.0.0",
     "morgan": "~1.9.0",
-    "passport": "^0.6.0",
-    "passport-azure-ad": "^3.0.4"
+    "passport": "^0.7.0",
+    "passport-azure-ad": "^4.3.5"
   }
 }
