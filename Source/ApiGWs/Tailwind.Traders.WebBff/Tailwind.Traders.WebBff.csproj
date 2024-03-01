@@ -8,20 +8,20 @@
     <Folder Include="wwwroot\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="Unknown" />
-    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="Unknown" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="Unknown" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="Unknown" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="Unknown" />
-    <PackageReference Include="System.ServiceModel.Duplex" Version="Unknown" />
-    <PackageReference Include="System.ServiceModel.Http" Version="Unknown" />
-    <PackageReference Include="System.ServiceModel.NetTcp" Version="Unknown" />
-    <PackageReference Include="System.ServiceModel.Security" Version="Unknown" />
-    <PackageReference Include="AspNetCore.HealthChecks.Uris" Version="Unknown" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="Unknown" />
-    <PackageReference Include="Microsoft.AspNetCore.HeaderPropagation" Version="Unknown" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="Unknown" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="Unknown" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.22.0" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="System.ServiceModel.Duplex" Version="6.0.0" />
+    <PackageReference Include="System.ServiceModel.Http" Version="8.0.0" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="8.0.0" />
+    <PackageReference Include="System.ServiceModel.Security" Version="6.0.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.Uris" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.HeaderPropagation" Version="8.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.1" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services" />

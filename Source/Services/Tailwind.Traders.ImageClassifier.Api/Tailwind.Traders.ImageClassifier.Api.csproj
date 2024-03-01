@@ -10,13 +10,13 @@
     <Folder Include="wwwroot\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="Unknown" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="Unknown" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="Unknown" />
-    <PackageReference Include="Microsoft.ML" Version="Unknown" />
-    <PackageReference Include="Microsoft.ML.ImageAnalytics" Version="Unknown" />
-    <PackageReference Include="Microsoft.ML.TensorFlow" Version="Unknown" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="Unknown" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="Unknown" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.22.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.1.0" />
+    <PackageReference Include="Microsoft.ML" Version="3.0.1" />
+    <PackageReference Include="Microsoft.ML.ImageAnalytics" Version="3.0.1" />
+    <PackageReference Include="Microsoft.ML.TensorFlow" Version="3.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.1" />
   </ItemGroup>
 </Project>
