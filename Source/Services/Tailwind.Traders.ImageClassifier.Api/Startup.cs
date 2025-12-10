@@ -53,7 +53,6 @@ namespace Tailwind.Traders.ImageClassifier.Api
             services
                 .AddSingleton<IImageScoringService>(scoringSvc)
                 .AddControllers()
-                .SetCompatibilityVersion(CompatibilityVersion.Latest)
                 .Services
                 .AddHealthChecks(Configuration)
                 .AddApplicationInsightsTelemetry(Configuration)
@@ -63,7 +62,10 @@ namespace Tailwind.Traders.ImageClassifier.Api
 
             if (!string.IsNullOrEmpty(appInsightsIK))
             {
-                services.AddApplicationInsightsTelemetry(appInsightsIK);
+                services.AddApplicationInsightsTelemetry(options =>
+                {
+                    options.ConnectionString = $"InstrumentationKey={appInsightsIK}";
+                });
             }
 
             services.AddApiVersioning(options =>
@@ -75,7 +77,6 @@ namespace Tailwind.Traders.ImageClassifier.Api
 
             services.AddSwaggerGen(options =>
             {
-                options.DescribeAllEnumsAsStrings();
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Title = "Tailwind Traders - Image Classifier API",

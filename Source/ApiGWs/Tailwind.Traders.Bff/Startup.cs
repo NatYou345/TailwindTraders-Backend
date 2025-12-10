@@ -59,8 +59,7 @@ namespace Tailwind.Traders.Bff
                 options.ApiVersionReader = new QueryStringApiVersionReader();
             });
 
-            services.AddControllers()
-                .SetCompatibilityVersion(CompatibilityVersion.Latest);
+            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

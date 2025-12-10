@@ -1,4 +1,5 @@
 ﻿using CsvHelper.Configuration;
+using System.Globalization;
 using Tailwind.Traders.Profile.Api.Csv;
 
 namespace Tailwind.Traders.Profile.Api.Helpers
@@ -7,7 +8,7 @@ namespace Tailwind.Traders.Profile.Api.Helpers
     {
         public ProfilesMap()
         {
-            AutoMap();
+            AutoMap(CultureInfo.InvariantCulture);
         }
     }
 }

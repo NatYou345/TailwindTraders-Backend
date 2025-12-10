@@ -26,7 +26,6 @@ namespace Tailwind.Traders.Profile.Api
         {
             services
                 .AddControllers()
-                .SetCompatibilityVersion(CompatibilityVersion.Latest)
                 .Services
                 .AddHealthChecks(Configuration)
                 .AddProfileContext(Configuration)
@@ -47,7 +46,10 @@ namespace Tailwind.Traders.Profile.Api
 
             if (!string.IsNullOrEmpty(appInsightsIK))
             {
-                services.AddApplicationInsightsTelemetry(appInsightsIK);
+                services.AddApplicationInsightsTelemetry(options =>
+                {
+                    options.ConnectionString = $"InstrumentationKey={appInsightsIK}";
+                });
             }
         }
 

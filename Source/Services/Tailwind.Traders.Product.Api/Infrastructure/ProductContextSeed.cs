@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using Tailwind.Traders.Product.Api.Models;
 using Tailwind.Traders.Product.Api.Extensions;
+using CsvHelper.Configuration;
 
 namespace Tailwind.Traders.Product.Api.Infrastructure
 {
@@ -31,7 +33,11 @@ namespace Tailwind.Traders.Product.Api.Infrastructure
                 var brands = _processFile.Process<ProductBrand>(contentRootPath, "ProductBrands");
                 var types = _processFile.Process<ProductType>(contentRootPath, "ProductTypes");
                 var features = _processFile.Process<ProductFeature>(contentRootPath, "ProductFeatures");
-                var products = _processFile.Process<ProductItem>(contentRootPath, "ProductItems", new CsvHelper.Configuration.Configuration() { IgnoreReferences = true, MissingFieldFound = null });
+                var csvConfig = new CsvConfiguration(CultureInfo.InvariantCulture) 
+                { 
+                    MissingFieldFound = null 
+                };
+                var products = _processFile.Process<ProductItem>(contentRootPath, "ProductItems", csvConfig);
                 var tags = _processFile.Process<ProductTag>(contentRootPath, "ProductTags");
 
                 await productContext.Tags.AddRangeAsync(tags);
