@@ -33,7 +33,10 @@ namespace Tailwind.Traders.Login.Api
 
             if (!string.IsNullOrEmpty(appInsightsIK))
             {
-                services.AddApplicationInsightsTelemetry(appInsightsIK);
+                services.AddApplicationInsightsTelemetry(options =>
+                {
+                    options.ConnectionString = $"InstrumentationKey={appInsightsIK}";
+                });
             }
 
             services.AddApiVersioning(options =>
@@ -43,7 +46,7 @@ namespace Tailwind.Traders.Login.Api
                 options.ApiVersionReader = new QueryStringApiVersionReader();
             });
 
-            services.AddControllers().SetCompatibilityVersion(CompatibilityVersion.Version_3_0).AddNewtonsoftJson();
+            services.AddControllers().AddNewtonsoftJson();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

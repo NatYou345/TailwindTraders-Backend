@@ -62,7 +62,10 @@ namespace Tailwind.Traders.ImageClassifier.Api
 
             if (!string.IsNullOrEmpty(appInsightsIK))
             {
-                services.AddApplicationInsightsTelemetry(appInsightsIK);
+                services.AddApplicationInsightsTelemetry(options =>
+                {
+                    options.ConnectionString = $"InstrumentationKey={appInsightsIK}";
+                });
             }
 
             services.AddApiVersioning(options =>

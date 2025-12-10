@@ -56,11 +56,13 @@ namespace Tailwind.Traders.WebBff
 
             if (!string.IsNullOrEmpty(appInsightsIK))
             {
-                services.AddApplicationInsightsTelemetry(appInsightsIK);
+                services.AddApplicationInsightsTelemetry(options =>
+                {
+                    options.ConnectionString = $"InstrumentationKey={appInsightsIK}";
+                });
             }
 
             services.AddControllers()
-                            .SetCompatibilityVersion(CompatibilityVersion.Latest)
                             .AddNewtonsoftJson()
                             .Services
                             .AddHealthChecks(Configuration)

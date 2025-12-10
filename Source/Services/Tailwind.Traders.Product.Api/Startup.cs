@@ -24,7 +24,6 @@ namespace Tailwind.Traders.Product.Api
         {
             services
                 .AddControllers()
-                .SetCompatibilityVersion(CompatibilityVersion.Latest)
                 .AddNewtonsoftJson()
                 .Services     
                 .AddHealthChecks(Configuration)
@@ -36,7 +35,10 @@ namespace Tailwind.Traders.Product.Api
 
             if (!string.IsNullOrEmpty(appInsightsIK))
             {
-                services.AddApplicationInsightsTelemetry(appInsightsIK);
+                services.AddApplicationInsightsTelemetry(options =>
+                {
+                    options.ConnectionString = $"InstrumentationKey={appInsightsIK}";
+                });
             }
 
             services.AddApiVersioning(options =>

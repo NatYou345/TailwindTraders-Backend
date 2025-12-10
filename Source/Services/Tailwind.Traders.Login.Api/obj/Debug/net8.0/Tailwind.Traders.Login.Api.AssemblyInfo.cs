@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tailwind.Traders.Login.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2eb827efba04108d0514329d24d63135bfaec65")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4cc1c9ace9e9e0b1dbf1ca734443dd3bfcf53ec2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tailwind.Traders.Login.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tailwind.Traders.Login.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
