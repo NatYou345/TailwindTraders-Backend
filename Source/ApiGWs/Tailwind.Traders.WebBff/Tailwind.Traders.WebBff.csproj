@@ -24,6 +24,11 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.1" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.Build" Version="17.8.43" />
+    <PackageReference Include="NuGet.Common" Version="6.3.3" />
+  <PackageReference Include="System.Formats.Asn1" Version="6.0.1" />
+  <PackageReference Include="System.Security.Cryptography.Pkcs" Version="6.0.3" />
+  <PackageReference Include="System.Text.Json" Version="8.0.5" />
     <WCFMetadata Include="Connected Services" />
   </ItemGroup>
 </Project>

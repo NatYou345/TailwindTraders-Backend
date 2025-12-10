@@ -13,10 +13,14 @@
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.22.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.1.0" />
+  <PackageReference Include="Microsoft.Build" Version="17.8.43" />
     <PackageReference Include="Microsoft.ML" Version="3.0.1" />
     <PackageReference Include="Microsoft.ML.ImageAnalytics" Version="3.0.1" />
     <PackageReference Include="Microsoft.ML.TensorFlow" Version="3.0.1" />
+  <PackageReference Include="NuGet.Common" Version="6.3.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.1" />
+  <PackageReference Include="System.Formats.Asn1" Version="6.0.1" />
+  <PackageReference Include="System.Text.Json" Version="8.0.5" />
   </ItemGroup>
 </Project>
