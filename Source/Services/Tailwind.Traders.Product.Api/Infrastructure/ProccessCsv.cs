@@ -3,6 +3,7 @@ using CsvHelper.Configuration;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 
@@ -19,7 +20,7 @@ namespace Tailwind.Traders.Product.Api.Infrastructure
             _classMaps = classMaps;
         }
 
-        public IEnumerable<TModel> Process<TModel>(string root, string fileName, Configuration configuration = null)
+        public IEnumerable<TModel> Process<TModel>(string root, string fileName, CsvConfiguration configuration = null)
         {
             try
             {
@@ -27,9 +28,10 @@ namespace Tailwind.Traders.Product.Api.Infrastructure
 
                 using (var reader = File.OpenText(Path.Combine(root, "Setup", $"{fileName}.csv")))
                 {
-                    var csvReader = configuration != null ? new CsvReader(reader, configuration) :  new CsvReader(reader);
+                    var config = configuration ?? new CsvConfiguration(CultureInfo.InvariantCulture);
+                    var csvReader = new CsvReader(reader, config);
 
-                    RegisterMappers(csvReader);
+                    RegisterMappers(csvReader.Context);
 
                     var model = csvReader.GetRecords<TModel>().ToList();
 
@@ -45,11 +47,11 @@ namespace Tailwind.Traders.Product.Api.Infrastructure
             }
         }
 
-        private void RegisterMappers(CsvReader csvReader)
+        private void RegisterMappers(CsvContext context)
         {
             foreach(var classMap in _classMaps)
             {
-                csvReader.Configuration.RegisterClassMap(classMap.GetType());
+                context.RegisterClassMap(classMap.GetType());
             }
         }
     }

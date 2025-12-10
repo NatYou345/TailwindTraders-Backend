@@ -9,6 +9,8 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+import java.util.Collections;
+
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
@@ -16,7 +18,7 @@ public class SwaggerConfig {
     @Bean
     public Docket productApi() {
         Contact contact = new Contact("", "", "");
-        ApiInfo apiInfo = new ApiInfo("Tasks Api", "", "1.0", "", contact, "", "");
+        ApiInfo apiInfo = new ApiInfo("Tasks Api", "", "1.0", "", contact, "", "", Collections.emptyList());
         return new Docket(DocumentationType.SPRING_WEB)
                 .apiInfo(apiInfo)
                 .select().apis(RequestHandlerSelectors.basePackage("Tailwind.Traders.Stock.Api"))

@@ -3,6 +3,7 @@ using CsvHelper.Configuration;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -27,8 +28,9 @@ namespace Tailwind.Traders.Profile.Api.Helpers
 
                 using (var reader = File.OpenText(Path.Combine(root, "Setup", $"{fileName}.csv")))
                 {
-                    var _csvReader = new CsvReader(reader);
-                    _csvReader.Configuration.RegisterClassMap<ProfilesMap>();
+                    var config = new CsvConfiguration(CultureInfo.InvariantCulture);
+                    var _csvReader = new CsvReader(reader, config);
+                    _csvReader.Context.RegisterClassMap<ProfilesMap>();
 
                     var model = _csvReader.GetRecords<TModel>().ToList();
 

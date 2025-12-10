@@ -1,6 +1,7 @@
 ﻿using CsvHelper.Configuration;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using Tailwind.Traders.Product.Api.Models;
@@ -11,7 +12,7 @@ namespace Tailwind.Traders.Product.Api.Mappers
     {
         public ProductTagMap()
         {
-            AutoMap();
+            AutoMap(CultureInfo.InvariantCulture);
         }
     }
 }

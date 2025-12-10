@@ -53,7 +53,6 @@ namespace Tailwind.Traders.ImageClassifier.Api
             services
                 .AddSingleton<IImageScoringService>(scoringSvc)
                 .AddControllers()
-                .SetCompatibilityVersion(CompatibilityVersion.Latest)
                 .Services
                 .AddHealthChecks(Configuration)
                 .AddApplicationInsightsTelemetry(Configuration)
@@ -75,7 +74,6 @@ namespace Tailwind.Traders.ImageClassifier.Api
 
             services.AddSwaggerGen(options =>
             {
-                options.DescribeAllEnumsAsStrings();
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Title = "Tailwind Traders - Image Classifier API",
